@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brawl Stars: Шпион</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>BRAWL SPY</h1>
+
+    <div class="container">
+        <div id="view-start">
+            <p style="font-size: 1.1rem; line-height: 1.5;">
+                Игра для 3 игроков.
+                Двое — одна команда.
+                Один — <b>Шпион</b>.
+            </p>
+            <button id="btn-start" class="btn">Начать игру</button>
+        </div>
+
+        <div id="view-pass" class="hidden-content">
+            <div id="player-indicator">Игрок 1</div>
+            <div class="card" style="background: #2a2255; color: white; border: 2px dashed #555;">
+                <div class="icon">🔒</div>
+                <div>Секретно</div>
+            </div>
+            <button id="btn-reveal" class="btn">Показать роль</button>
+        </div>
+
+        <div id="view-role" class="hidden-content">
+            <div id="role-card-content" class="card">
+                </div>
+            <button id="btn-next" class="btn btn-red">Скрыть и передать</button>
+        </div>
+
+        <div id="view-end" class="hidden-content">
+            <div class="card" style="background: #53e06d;
+            color: #004d13; border: 4px solid #2e8f41;">
+                <div class="icon">⚔️</div>
+                <div class="role-text">В БОЙ!</div>
+            </div>
+            <p>Обсуждайте и ищите шпиона!</p>
+            <button id="btn-restart" class="btn">Новая игра</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
